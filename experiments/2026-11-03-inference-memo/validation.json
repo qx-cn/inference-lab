@@ -1,0 +1,53 @@
+{
+  "python": "Python 3.15",
+  "scripts": [
+    {
+      "script": "lab01_roofline_and_kvcache_calc.py",
+      "command": "python3 -I <isolated-copy>/lab01_roofline_and_kvcache_calc.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab02_nanovllm_block_and_scheduler.py",
+      "command": "python3 -I <isolated-copy>/lab02_nanovllm_block_and_scheduler.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab03_minisgl_radix_tree_cache.py",
+      "command": "python3 -I <isolated-copy>/lab03_minisgl_radix_tree_cache.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab04_overlap_scheduling_and_tp.py",
+      "command": "python3 -I <isolated-copy>/lab04_overlap_scheduling_and_tp.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab05_online_softmax_and_split_kv.py",
+      "command": "python3 -I <isolated-copy>/lab05_online_softmax_and_split_kv.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab06_speculative_decoding_and_omni_dag.py",
+      "command": "python3 -I <isolated-copy>/lab06_speculative_decoding_and_omni_dag.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab07_mla_absorption_and_constrained_decoding.py",
+      "command": "python3 -I <isolated-copy>/lab07_mla_absorption_and_constrained_decoding.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab08_chunked_prefill_and_rl_weight_refit.py",
+      "command": "python3 -I <isolated-copy>/lab08_chunked_prefill_and_rl_weight_refit.py",
+      "exit_code": 0
+    },
+    {
+      "script": "lab09_rl_rollout_and_mismatch_tis.py",
+      "command": "python3 -I <isolated-copy>/lab09_rl_rollout_and_mismatch_tis.py",
+      "exit_code": 0
+    }
+  ],
+  "original_files_unchanged": true,
+  "historical_results_unchanged": true,
+  "scope": "Teaching simulations only; no upstream runtime or GPU benchmark was executed"
+}

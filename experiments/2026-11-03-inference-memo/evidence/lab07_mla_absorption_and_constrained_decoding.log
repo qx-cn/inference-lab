@@ -1,0 +1,13 @@
+=== [实验 07-A] DeepSeek MLA 矩阵吸收 (w_kc / w_vc) 数学等价性与算力账本核验 ===
+  未吸收路径 vs 矩阵吸收路径最大绝对误差: 1.11e-16 (< 1e-12)
+  DeepSeek-V3 解码单步 (S=8192) 历史 KV 解压投影算力: 274.88 GFLOPs
+  DeepSeek-V3 解码单步 (S=8192) 矩阵吸收后投影算力  : 33.55 MFLOPs (缩减倍数: 8192x)
+
+=== [实验 07-B] 有限状态机词表掩码 (fill_vocab_mask) 与Jump-Forward 快进解码 (Jump-Forward) ===
+  状态  0 ->  5 | Jump-Forward (0 次模型前向)             | 产出  5 个 token: ['{', '"', 'id', '"', ':'] ('{"id":')
+  状态  5 ->  6 | Model-Forward #1 (掩码拦截非法高分 token)  | 产出  1 个 token: ['2'] ('2')
+  状态  6 ->  7 | Model-Forward #2 (掩码拦截非法高分 token)  | 产出  1 个 token: ['5'] ('5')
+  状态  7 -> 12 | Jump-Forward (0 次模型前向)             | 产出  5 个 token: [',', '"', 'ok', '"', ':true}'] (',"ok":true}')
+  最终生成 JSON: {"id":25,"ok":true} | 总 token 数: 12 | 实际模型前向次数: 2 (节省 10 次前向，压缩率 83.3%)
+
+[PASS] 实验 07 全部断言核验通过。

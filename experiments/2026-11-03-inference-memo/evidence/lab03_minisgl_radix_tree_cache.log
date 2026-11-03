@@ -1,0 +1,28 @@
+=== [实验 03] mini-sglang RadixPrefixCache 节点分裂与 LRU 驱逐实验 ===
+[步骤 1] 插入 'Hello world' 后树结构：
+- [ROOT] (len=0, ref=1, leaf=False)
+  - [Hello world] (len=11, ref=0, leaf=True)
+
+[步骤 2] 插入 'Hellofriend' 触发 split_at(5) 后树结构：
+- [ROOT] (len=0, ref=1, leaf=False)
+  - [Hello] (len=5, ref=0, leaf=False)
+    - [ world] (len=6, ref=0, leaf=True)
+    - [friend] (len=6, ref=0, leaf=True)
+
+[步骤 3] 插入并锁定 'Hello world!' 后树结构（祖先链 ref_count 全部 +1）：
+- [ROOT] (len=0, ref=1, leaf=False)
+  - [Hello] (len=5, ref=1, leaf=False)
+    - [ world] (len=6, ref=1, leaf=False)
+      - [!] (len=1, ref=1, leaf=True)
+    - [friend] (len=6, ref=0, leaf=True)
+
+[步骤 4] 请求驱逐 6 个槽位 -> 成功驱逐 'friend' 分支，剩余 evictable_size=0：
+- [ROOT] (len=0, ref=1, leaf=False)
+  - [Hello] (len=5, ref=1, leaf=False)
+    - [ world] (len=6, ref=1, leaf=False)
+      - [!] (len=1, ref=1, leaf=True)
+
+[步骤 5] 解锁 'Hello world!' 并级联驱逐全部 12 个槽位后树结构：
+- [ROOT] (len=0, ref=1, leaf=True)
+
+[PASS] 实验 03 全部断言核验通过。

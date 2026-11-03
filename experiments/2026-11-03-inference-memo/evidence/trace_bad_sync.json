@@ -1,0 +1,185 @@
+{
+  "traceEvents": [
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1,
+      "args": {
+        "name": "CPU Scheduler Process"
+      }
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1,
+      "args": {
+        "name": "Scheduler Main Thread"
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1,
+      "args": {
+        "name": "GPU Device 0"
+      }
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1,
+      "args": {
+        "name": "GPU Compute Stream"
+      }
+    },
+    {
+      "name": "CPU_Prepare_Step_0",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 0,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_0",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1200,
+      "dur": 4000
+    },
+    {
+      "name": "cudaStreamSynchronize_tensor.item()_Step_0",
+      "cat": "sync_stall",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1200,
+      "dur": 4900
+    },
+    {
+      "name": "CPU_PostProcess_Step_0",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 6100,
+      "dur": 800
+    },
+    {
+      "name": "CPU_Prepare_Step_1",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 6900,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_1",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 8100,
+      "dur": 4000
+    },
+    {
+      "name": "cudaStreamSynchronize_tensor.item()_Step_1",
+      "cat": "sync_stall",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 8100,
+      "dur": 4900
+    },
+    {
+      "name": "CPU_PostProcess_Step_1",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 13000,
+      "dur": 800
+    },
+    {
+      "name": "CPU_Prepare_Step_2",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 13800,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_2",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 15000,
+      "dur": 4000
+    },
+    {
+      "name": "cudaStreamSynchronize_tensor.item()_Step_2",
+      "cat": "sync_stall",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 15000,
+      "dur": 4900
+    },
+    {
+      "name": "CPU_PostProcess_Step_2",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 19900,
+      "dur": 800
+    },
+    {
+      "name": "CPU_Prepare_Step_3",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 20700,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_3",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 21900,
+      "dur": 4000
+    },
+    {
+      "name": "cudaStreamSynchronize_tensor.item()_Step_3",
+      "cat": "sync_stall",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 21900,
+      "dur": 4900
+    },
+    {
+      "name": "CPU_PostProcess_Step_3",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 26800,
+      "dur": 800
+    }
+  ],
+  "displayTimeUnit": "ms"
+}

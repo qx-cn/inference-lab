@@ -1,0 +1,149 @@
+{
+  "traceEvents": [
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1,
+      "args": {
+        "name": "CPU Scheduler Process"
+      }
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1,
+      "args": {
+        "name": "Scheduler Main Thread"
+      }
+    },
+    {
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1,
+      "args": {
+        "name": "GPU Device 0"
+      }
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1,
+      "args": {
+        "name": "GPU Compute Stream"
+      }
+    },
+    {
+      "name": "CPU_Prepare_Step_0",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 0,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_0",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1200,
+      "dur": 4000
+    },
+    {
+      "name": "CPU_Async_PostProcess_Step_0",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1200,
+      "dur": 800
+    },
+    {
+      "name": "CPU_Prepare_Step_1",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 2000,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_1",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 5200,
+      "dur": 4000
+    },
+    {
+      "name": "CPU_Async_PostProcess_Step_1",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 3200,
+      "dur": 800
+    },
+    {
+      "name": "CPU_Prepare_Step_2",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 4000,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_2",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 9200,
+      "dur": 4000
+    },
+    {
+      "name": "CPU_Async_PostProcess_Step_2",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 5200,
+      "dur": 800
+    },
+    {
+      "name": "CPU_Prepare_Step_3",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 6000,
+      "dur": 1200
+    },
+    {
+      "name": "GPU_Forward_Sample_Step_3",
+      "cat": "gpu",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 13200,
+      "dur": 4000
+    },
+    {
+      "name": "CPU_Async_PostProcess_Step_3",
+      "cat": "cpu",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 7200,
+      "dur": 800
+    }
+  ],
+  "displayTimeUnit": "ms"
+}

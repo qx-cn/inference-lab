@@ -1,0 +1,12 @@
+=== [实验 04-A] 串行调度 vs 零开销重叠调度时间线仿真 ===
+  单步耗时设定: CPU Pre=1.5ms, GPU Forward+Sample=4.0ms, CPU Post=1.0ms
+  [串行 Normal Loop]  8 步总耗时:  52.0 ms | GPU GPU Bubble 占比: 38.5%
+  [重叠 Overlap Loop] 8 步总耗时:  34.5 ms | GPU GPU Bubble 占比:  7.2%
+
+=== [实验 04-B] FutureMap 负索引占位与 GPU 流内异步解引用核验 ===
+  CPU 预设输入占位符: -3 -> GPU 第 N 步采样写回 future_map[3]=8888 -> GPU 第 N+1 步解引用得到真实 Token ID=8888
+
+=== [实验 04-C] 张量并行 ColumnParallel + SwiGLU + RowParallel 数学等价性核验 ===
+  单卡全量输出与双卡 TP=2 (仅 1 次 All-Reduce) 最大绝对误差: 0.00e+00
+
+[PASS] 实验 04 全部断言核验通过。

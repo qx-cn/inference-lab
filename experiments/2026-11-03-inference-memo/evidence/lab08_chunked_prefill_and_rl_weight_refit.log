@@ -1,0 +1,11 @@
+=== [实验 08-A] 突发 32K 长请求：无分块预填充 vs 分块预填充 (chunk_size=2048) 尾延迟消融 ===
+  [无分块预填充] 在线解码 ITL P50=  6.0 ms | ITL P99=244.0 ms (长请求阻塞导致世代停顿) | 32K TTFT=244.0 ms
+  [分块预填充]   在线解码 ITL P50= 18.0 ms | ITL P99= 18.0 ms (尾延迟降低 13.6x)      | 32K TTFT=288.0 ms
+
+=== [实验 08-B] RL 混部虚拟内存睡眠/唤醒 (Sleep/Wake) 与 FlattenedTensorBucket 热更新 ===
+  物理显存变化: 全量运行=41.5 GB -> 睡眠态(仅留 CUDA Graph)=1.5 GB -> 阶段一唤醒(仅权重)=17.5 GB -> 阶段二全唤醒=41.5 GB
+  虚拟地址不变量: weights virtual_ptr=0x7f0000000000 (恒定不变，CUDA Graph 零重录) | 睡眠后 radix_cache_entries=0 (自动 flush_cache)
+  FlattenedTensorBucket 打包字节数: 64 Bytes | 解包重构最大绝对误差: 0.00e+00
+  8B 模型 (291 张量, 16GB) 热更新账本: 逐张量同步=879.4 ms vs 4 分桶同步=362.8 ms (提速 2.42x)
+
+[PASS] 实验 08 全部断言核验通过。

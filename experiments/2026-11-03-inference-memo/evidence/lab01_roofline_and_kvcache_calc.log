@@ -1,0 +1,35 @@
+=== [实验 01-A] 第 0 周：Qwen3 GQA 投影维度与前向张量形状核验 ===
+q_proj 权重维度: (4096, 4096) | k_proj / v_proj 权重维度: (512, 4096)
+合并 QKVParallelLinear 输出特征维: 5120
+  input_ids                    -> (512,)
+  embed_tokens_out             -> (512, 4096)
+  qkv_proj_out                 -> (512, 5120)
+  q_after_split_and_rope       -> (512, 32, 128)
+  kv_after_split_and_rope      -> (512, 4, 128)
+  attn_out                     -> (512, 32, 128)
+  o_proj_out                   -> (512, 4096)
+  gate_up_proj_out             -> (512, 24576)
+  act_fn_silu_and_mul_out      -> (512, 12288)
+  down_proj_out                -> (512, 4096)
+  lm_head_prefill_sliced_in    -> (4, 4096)
+  lm_head_logits_out           -> (4, 151936)
+
+=== [实验 01-B] 第 1 周：各架构单 Token KV Cache 字节数与 24GB 显存容量账本 ===
+  Qwen3-0.6B (GQA)      : 112.00 KB/token | 32x4K 并发占 14.00 GB | 可缓存 179,755 Tokens (约 43 条 4K 序列)
+  Llama-3-8B (GQA)      : 128.00 KB/token | 32x4K 并发占 16.00 GB | 可缓存 36,044 Tokens (约 8 条 4K 序列)
+  DeepSeek-V3 (MLA 61L) :  68.62 KB/token | 32x4K 并发占  8.58 GB | 单卡 24GB 无法装下全量 FP16 权重，需多卡并行或量化
+
+=== [实验 01-C] 第 1 周：Roofline 算术强度推导 (Linear 4096x4096, FP16) ===
+  RTX 4090 算力拐点: 327.4 FLOPs/Byte | H200 算力拐点: 206.0 FLOPs/Byte
+  Batch Tokens =    1 -> 算术强度 =    1.0 FLOPs/Byte -> [H200: Memory-bound (带宽受限)]
+  Batch Tokens =    8 -> 算术强度 =    8.0 FLOPs/Byte -> [H200: Memory-bound (带宽受限)]
+  Batch Tokens =   32 -> 算术强度 =   31.5 FLOPs/Byte -> [H200: Memory-bound (带宽受限)]
+  Batch Tokens =  128 -> 算术强度 =  120.5 FLOPs/Byte -> [H200: Memory-bound (带宽受限)]
+  Batch Tokens =  256 -> 算术强度 =  227.6 FLOPs/Byte -> [H200: Compute-bound (compute-bound（计算受限）)]
+  Batch Tokens = 1024 -> 算术强度 =  682.7 FLOPs/Byte -> [H200: Compute-bound (compute-bound（计算受限）)]
+
+=== [实验 01-D] 合并 QKV 视图跨步访存 (Strided View) 与三指针 UTF-8 增量反分词核验 ===
+  [核验 1] QKV 合并张量 [N=4, 5120] 切片后 k.stride(0)=5120 (而非 512): idx=1 真实 K 首元素偏移=9216，误用紧凑步幅会误读偏移=4608 (token 0 的 V 起点)
+  [核验 2] 字节级 BPE 流式反分词: 朴素逐 token解码=['AI', '�', '�', '!'] (含替换符 \ufffd) | 三指针增量缓冲输出=['AI', '', '智', '!'] -> 拼接结果='AI智!'
+
+[PASS] 实验 01 全部断言核验通过。

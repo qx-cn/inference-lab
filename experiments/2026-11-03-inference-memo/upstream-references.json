@@ -1,0 +1,1436 @@
+{
+  "repositories": {
+    "nano-vllm": {
+      "remote": "https://github.com/GeeeekExplorer/nano-vllm",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "shallow": false
+    },
+    "mini-sglang": {
+      "remote": "https://github.com/sgl-project/mini-sglang",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "shallow": false
+    },
+    "sglang": {
+      "remote": "https://github.com/sgl-project/sglang",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "shallow": false
+    },
+    "vllm": {
+      "remote": "https://github.com/vllm-project/vllm",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "shallow": true
+    },
+    "sglang-omni": {
+      "remote": "https://github.com/sgl-project/sglang-omni",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "shallow": true
+    },
+    "zero-to-sglang": {
+      "remote": "https://github.com/datawhalechina/zero-to-sglang",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "shallow": false
+    },
+    "Awesome-ML-SYS-Tutorial": {
+      "remote": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "shallow": true
+    }
+  },
+  "references": [
+    {
+      "source_target": "cs/inference/nano-vllm/README.md",
+      "repository": "nano-vllm",
+      "path": "README.md",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/README.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/engine/block_manager.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/engine/block_manager.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/engine/block_manager.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/engine/model_runner.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/engine/model_runner.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/engine/model_runner.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/engine/scheduler.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/engine/scheduler.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/engine/scheduler.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/engine/sequence.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/engine/sequence.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/engine/sequence.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/layers/attention.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/layers/attention.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/layers/attention.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/layers/embed_head.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/layers/embed_head.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/layers/embed_head.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/layers/layernorm.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/layers/layernorm.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/layers/layernorm.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/layers/linear.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/layers/linear.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/layers/linear.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/nano-vllm/nanovllm/models/qwen3.py",
+      "repository": "nano-vllm",
+      "path": "nanovllm/models/qwen3.py",
+      "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+      "status": "file_verified",
+      "url": "https://github.com/GeeeekExplorer/nano-vllm/blob/bb823b3e06983d71485a8e1f23715ebd87d98ef8/nanovllm/models/qwen3.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/README.md",
+      "repository": "mini-sglang",
+      "path": "README.md",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/README.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/docs/structures.md",
+      "repository": "mini-sglang",
+      "path": "docs/structures.md",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/docs/structures.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/attention/fa.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/attention/fa.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/attention/fa.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/attention/fi.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/attention/fi.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/attention/fi.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/engine/engine.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/engine/engine.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/engine/engine.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/engine/graph.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/engine/graph.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/engine/graph.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/kernel/csrc/jit/store.cu",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/kernel/csrc/jit/store.cu",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/kernel/csrc/jit/store.cu",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/kernel/triton",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/kernel/triton",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "directory_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/tree/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/kernel/triton",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/kernel/triton/fused_moe.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/kernel/triton/fused_moe.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/kernel/triton/fused_moe.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/kvcache/radix_cache.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/kvcache/radix_cache.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/kvcache/radix_cache.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/models/qwen3.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/models/qwen3.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/models/qwen3.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/models/qwen3_moe.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/models/qwen3_moe.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/models/qwen3_moe.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/moe/fused.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/moe/fused.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/moe/fused.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/scheduler/decode.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/scheduler/decode.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/scheduler/decode.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/scheduler/prefill.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/scheduler/prefill.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/scheduler/prefill.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/scheduler/scheduler.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/scheduler/scheduler.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/scheduler/scheduler.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/server",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/server",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "directory_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/tree/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/server",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/mini-sglang/python/minisgl/tokenizer/detokenize.py",
+      "repository": "mini-sglang",
+      "path": "python/minisgl/tokenizer/detokenize.py",
+      "commit": "9a91cfafe754aa85daee49998176275667eb58f2",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/mini-sglang/blob/9a91cfafe754aa85daee49998176275667eb58f2/python/minisgl/tokenizer/detokenize.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt",
+      "repository": "sglang",
+      "path": "python/sglang/srt",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "directory_verified",
+      "url": "https://github.com/sgl-project/sglang/tree/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/constrained/outlines_jump_forward.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/constrained/outlines_jump_forward.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/constrained/outlines_jump_forward.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/constrained/xgrammar_backend.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/constrained/xgrammar_backend.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/constrained/xgrammar_backend.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/layers/attention",
+      "repository": "sglang",
+      "path": "python/sglang/srt/layers/attention",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "directory_verified",
+      "url": "https://github.com/sgl-project/sglang/tree/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/layers/attention",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/layers/moe",
+      "repository": "sglang",
+      "path": "python/sglang/srt/layers/moe",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "directory_verified",
+      "url": "https://github.com/sgl-project/sglang/tree/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/layers/moe",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/layers/quantization/base_config.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/layers/quantization/base_config.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/layers/quantization/base_config.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/layers/quantization/fp8.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/layers/quantization/fp8.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/layers/quantization/fp8.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/managers/scheduler.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/managers/scheduler.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/managers/scheduler_components/weight_updater.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/managers/scheduler_components/weight_updater.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/managers/scheduler_components/weight_updater.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/mem_cache/radix_cache.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/mem_cache/radix_cache.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/mem_cache/radix_cache.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/mem_cache/unified_cache/components/mamba.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/mem_cache/unified_cache/components/mamba.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/mem_cache/unified_cache/components/mamba.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/model_executor/model_runner.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/model_executor/model_runner.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/model_executor/model_runner.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/model_executor/pool_configurator.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/model_executor/pool_configurator.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/model_executor/pool_configurator.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/models/deepseek_common/attention_forward_methods/forward_mla.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/models/deepseek_common/attention_forward_methods/forward_mla.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/models/deepseek_common/attention_forward_methods/forward_mla.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/models/deepseek_v2.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/models/deepseek_v2.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/models/deepseek_v2.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/speculative/eagle_info.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/speculative/eagle_info.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/speculative/eagle_info.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/speculative/eagle_worker_v2.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/speculative/eagle_worker_v2.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/speculative/eagle_worker_v2.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/python/sglang/srt/weight_sync/tensor_bucket.py",
+      "repository": "sglang",
+      "path": "python/sglang/srt/weight_sync/tensor_bucket.py",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/python/sglang/srt/weight_sync/tensor_bucket.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang/sgl-model-gateway/src/policies/cache_aware.rs",
+      "repository": "sglang",
+      "path": "sgl-model-gateway/src/policies/cache_aware.rs",
+      "commit": "035670b6854176b9176ddc7c9d506564c3a69a7c",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang/blob/035670b6854176b9176ddc7c9d506564c3a69a7c/sgl-model-gateway/src/policies/cache_aware.rs",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design",
+      "repository": "vllm",
+      "path": "docs/design",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "directory_verified",
+      "url": "https://github.com/vllm-project/vllm/tree/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/arch_overview.md",
+      "repository": "vllm",
+      "path": "docs/design/arch_overview.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/arch_overview.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/attention_backends.md",
+      "repository": "vllm",
+      "path": "docs/design/attention_backends.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/attention_backends.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/cuda_graphs.md",
+      "repository": "vllm",
+      "path": "docs/design/cuda_graphs.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/cuda_graphs.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/cuda_graphs_multimodal.md",
+      "repository": "vllm",
+      "path": "docs/design/cuda_graphs_multimodal.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/cuda_graphs_multimodal.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/custom_op.md",
+      "repository": "vllm",
+      "path": "docs/design/custom_op.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/custom_op.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/dbo.md",
+      "repository": "vllm",
+      "path": "docs/design/dbo.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/dbo.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/debug_vllm_compile.md",
+      "repository": "vllm",
+      "path": "docs/design/debug_vllm_compile.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/debug_vllm_compile.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/fused_moe_modular_kernel.md",
+      "repository": "vllm",
+      "path": "docs/design/fused_moe_modular_kernel.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/fused_moe_modular_kernel.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/fusions.md",
+      "repository": "vllm",
+      "path": "docs/design/fusions.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/fusions.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/hisparse.md",
+      "repository": "vllm",
+      "path": "docs/design/hisparse.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/hisparse.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/hybrid_kv_cache_manager.md",
+      "repository": "vllm",
+      "path": "docs/design/hybrid_kv_cache_manager.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/hybrid_kv_cache_manager.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/mm_processing.md",
+      "repository": "vllm",
+      "path": "docs/design/mm_processing.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/mm_processing.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/moe_kernel_features.md",
+      "repository": "vllm",
+      "path": "docs/design/moe_kernel_features.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/moe_kernel_features.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/nixl_kv_push_connector.md",
+      "repository": "vllm",
+      "path": "docs/design/nixl_kv_push_connector.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/nixl_kv_push_connector.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/paged_attention.md",
+      "repository": "vllm",
+      "path": "docs/design/paged_attention.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/paged_attention.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/prefix_caching.md",
+      "repository": "vllm",
+      "path": "docs/design/prefix_caching.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/prefix_caching.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/torch_compile.md",
+      "repository": "vllm",
+      "path": "docs/design/torch_compile.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/torch_compile.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/docs/design/vllm_ir.md",
+      "repository": "vllm",
+      "path": "docs/design/vllm_ir.md",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/docs/design/vllm_ir.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/vllm/model_executor/models",
+      "repository": "vllm",
+      "path": "vllm/model_executor/models",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "directory_verified",
+      "url": "https://github.com/vllm-project/vllm/tree/c7a760751977e4e3396d586956d8767a9bc44a82/vllm/model_executor/models",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/vllm/v1/attention/backends",
+      "repository": "vllm",
+      "path": "vllm/v1/attention/backends",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "directory_verified",
+      "url": "https://github.com/vllm-project/vllm/tree/c7a760751977e4e3396d586956d8767a9bc44a82/vllm/v1/attention/backends",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/vllm/v1/core/kv_cache_manager.py",
+      "repository": "vllm",
+      "path": "vllm/v1/core/kv_cache_manager.py",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/vllm/v1/core/kv_cache_manager.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/vllm/v1/core/sched/scheduler.py",
+      "repository": "vllm",
+      "path": "vllm/v1/core/sched/scheduler.py",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/vllm/v1/core/sched/scheduler.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/vllm/vllm/v1/worker/gpu_model_runner.py",
+      "repository": "vllm",
+      "path": "vllm/v1/worker/gpu_model_runner.py",
+      "commit": "c7a760751977e4e3396d586956d8767a9bc44a82",
+      "status": "file_verified",
+      "url": "https://github.com/vllm-project/vllm/blob/c7a760751977e4e3396d586956d8767a9bc44a82/vllm/v1/worker/gpu_model_runner.py",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/README.md",
+      "repository": "sglang-omni",
+      "path": "docs/README.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/README.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/cookbook/qwen3_asr.md",
+      "repository": "sglang-omni",
+      "path": "docs/cookbook/qwen3_asr.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/cookbook/qwen3_asr.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/developer_reference/communication.md",
+      "repository": "sglang-omni",
+      "path": "docs/developer_reference/communication.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/developer_reference/communication.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/developer_reference/full_duplex_guide.md",
+      "repository": "sglang-omni",
+      "path": "docs/developer_reference/full_duplex_guide.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/developer_reference/full_duplex_guide.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/developer_reference/main.md",
+      "repository": "sglang-omni",
+      "path": "docs/developer_reference/main.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/developer_reference/main.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/developer_reference/pipeline.md",
+      "repository": "sglang-omni",
+      "path": "docs/developer_reference/pipeline.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/developer_reference/pipeline.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/developer_reference/tts_model_integration.md",
+      "repository": "sglang-omni",
+      "path": "docs/developer_reference/tts_model_integration.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/developer_reference/tts_model_integration.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/docs/get_started/installation_apple_silicon.md",
+      "repository": "sglang-omni",
+      "path": "docs/get_started/installation_apple_silicon.md",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "file_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/blob/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/docs/get_started/installation_apple_silicon.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/sglang-omni/sglang_omni/models",
+      "repository": "sglang-omni",
+      "path": "sglang_omni/models",
+      "commit": "137eaa97b7ba426b13aa8837d37c5ba4e0a0daba",
+      "status": "directory_verified",
+      "url": "https://github.com/sgl-project/sglang-omni/tree/137eaa97b7ba426b13aa8837d37c5ba4e0a0daba/sglang_omni/models",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/index.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/index.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/index.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part1/第1章_LLM入门.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part1/第1章_LLM入门.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part1/%E7%AC%AC1%E7%AB%A0_LLM%E5%85%A5%E9%97%A8.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part1/第2章_推理入门.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part1/第2章_推理入门.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part1/%E7%AC%AC2%E7%AB%A0_%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part1/第3章_GPU入门.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part1/第3章_GPU入门.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part1/%E7%AC%AC3%E7%AB%A0_GPU%E5%85%A5%E9%97%A8.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part1/第4章_推理的核心数据结构入门.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part1/第4章_推理的核心数据结构入门.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part1/%E7%AC%AC4%E7%AB%A0_%E6%8E%A8%E7%90%86%E7%9A%84%E6%A0%B8%E5%BF%83%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%85%A5%E9%97%A8.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part1/第5章_Benchmark入门.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part1/第5章_Benchmark入门.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part1/%E7%AC%AC5%E7%AB%A0_Benchmark%E5%85%A5%E9%97%A8.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第10章_投机解码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第10章_投机解码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC10%E7%AB%A0_%E6%8A%95%E6%9C%BA%E8%A7%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第10章_投机解码_代码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第10章_投机解码_代码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC10%E7%AB%A0_%E6%8A%95%E6%9C%BA%E8%A7%A3%E7%A0%81_%E4%BB%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第1章_mini-sglang：推理引擎长什么样.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第1章_mini-sglang：推理引擎长什么样.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC1%E7%AB%A0_mini-sglang%EF%BC%9A%E6%8E%A8%E7%90%86%E5%BC%95%E6%93%8E%E9%95%BF%E4%BB%80%E4%B9%88%E6%A0%B7.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第2章_一个请求的旅程.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第2章_一个请求的旅程.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC2%E7%AB%A0_%E4%B8%80%E4%B8%AA%E8%AF%B7%E6%B1%82%E7%9A%84%E6%97%85%E7%A8%8B.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第2章_一个请求的旅程_代码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第2章_一个请求的旅程_代码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC2%E7%AB%A0_%E4%B8%80%E4%B8%AA%E8%AF%B7%E6%B1%82%E7%9A%84%E6%97%85%E7%A8%8B_%E4%BB%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第3章_前向与生成.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第3章_前向与生成.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC3%E7%AB%A0_%E5%89%8D%E5%90%91%E4%B8%8E%E7%94%9F%E6%88%90.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第3章_前向与生成_代码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第3章_前向与生成_代码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC3%E7%AB%A0_%E5%89%8D%E5%90%91%E4%B8%8E%E7%94%9F%E6%88%90_%E4%BB%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第5章_HTTP服务与并发.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第5章_HTTP服务与并发.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC5%E7%AB%A0_HTTP%E6%9C%8D%E5%8A%A1%E4%B8%8E%E5%B9%B6%E5%8F%91.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第5章_HTTP服务与并发_代码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第5章_HTTP服务与并发_代码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC5%E7%AB%A0_HTTP%E6%9C%8D%E5%8A%A1%E4%B8%8E%E5%B9%B6%E5%8F%91_%E4%BB%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第6章_ContinuousBatching与调度.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第6章_ContinuousBatching与调度.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC6%E7%AB%A0_ContinuousBatching%E4%B8%8E%E8%B0%83%E5%BA%A6.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第6章_ContinuousBatching与调度_代码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第6章_ContinuousBatching与调度_代码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC6%E7%AB%A0_ContinuousBatching%E4%B8%8E%E8%B0%83%E5%BA%A6_%E4%BB%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第7章_PagedKVCache与显存管理.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第7章_PagedKVCache与显存管理.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC7%E7%AB%A0_PagedKVCache%E4%B8%8E%E6%98%BE%E5%AD%98%E7%AE%A1%E7%90%86.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第8章_RadixAttention与前缀缓存.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第8章_RadixAttention与前缀缓存.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC8%E7%AB%A0_RadixAttention%E4%B8%8E%E5%89%8D%E7%BC%80%E7%BC%93%E5%AD%98.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第8章_RadixAttention与前缀缓存_代码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第8章_RadixAttention与前缀缓存_代码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC8%E7%AB%A0_RadixAttention%E4%B8%8E%E5%89%8D%E7%BC%80%E7%BC%93%E5%AD%98_%E4%BB%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第9章_多进程与张量并行.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第9章_多进程与张量并行.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC9%E7%AB%A0_%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B8%8E%E5%BC%A0%E9%87%8F%E5%B9%B6%E8%A1%8C.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part2/第9章_多进程与张量并行_代码.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part2/第9章_多进程与张量并行_代码.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part2/%E7%AC%AC9%E7%AB%A0_%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B8%8E%E5%BC%A0%E9%87%8F%E5%B9%B6%E8%A1%8C_%E4%BB%A3%E7%A0%81.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part3/第1章_注意力后端.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part3/第1章_注意力后端.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part3/%E7%AC%AC1%E7%AB%A0_%E6%B3%A8%E6%84%8F%E5%8A%9B%E5%90%8E%E7%AB%AF.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/zero-to-sglang/course-material/ch/part3/第3章_分层缓存.md",
+      "repository": "zero-to-sglang",
+      "path": "course-material/ch/part3/第3章_分层缓存.md",
+      "commit": "6215e7a3abf4b0a394c044a4bf3eb10730846abe",
+      "status": "file_verified",
+      "url": "https://github.com/datawhalechina/zero-to-sglang/blob/6215e7a3abf4b0a394c044a4bf3eb10730846abe/course-material/ch/part3/%E7%AC%AC3%E7%AB%A0_%E5%88%86%E5%B1%82%E7%BC%93%E5%AD%98.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/README.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "README.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/README.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/rl-walk-through/part-1.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/rl-walk-through/part-1.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/rl-walk-through/part-1.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/rl-walk-through/part-8.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/rl-walk-through/part-8.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/rl-walk-through/part-8.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/slime/code-walk-through/original/part-1.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/slime/code-walk-through/original/part-1.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/slime/code-walk-through/original/part-1.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/slime/code-walk-through/original/part-5.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/slime/code-walk-through/original/part-5.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/slime/code-walk-through/original/part-5.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/slime/code-walk-through/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/slime/code-walk-through/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/slime/code-walk-through/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/slime/fp8/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/slime/fp8/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/slime/fp8/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/slime/int4/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/slime/int4/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/slime/int4/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/slime/mismatch/blog-cn.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/slime/mismatch/blog-cn.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/slime/mismatch/blog-cn.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/slime/spec/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/slime/spec/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/slime/spec/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/sys-design/readme-1.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/sys-design/readme-1.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/sys-design/readme-1.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/sys-design/readme-5.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/sys-design/readme-5.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/sys-design/readme-5.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/verl/multi-turn/code-walk-through/readme-2.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/verl/multi-turn/code-walk-through/readme-2.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/verl/multi-turn/code-walk-through/readme-2.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/verl/multi-turn/code-walk-through/readme-6.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/verl/multi-turn/code-walk-through/readme-6.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/verl/multi-turn/code-walk-through/readme-6.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/verl/multi-turn/code-walk-through/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/verl/multi-turn/code-walk-through/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/verl/multi-turn/code-walk-through/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/rlhf/verl/multi-turn/fast_tokenization/multiturn_tokenization_and_masking_ZH.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "rlhf/verl/multi-turn/fast_tokenization/multiturn_tokenization_and_masking_ZH.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/rlhf/verl/multi-turn/fast_tokenization/multiturn_tokenization_and_masking_ZH.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/code-walk-through/multimodal_request_lifecycle.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/code-walk-through/multimodal_request_lifecycle.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/code-walk-through/multimodal_request_lifecycle.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/code-walk-through/readme-CN.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/code-walk-through/readme-CN.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/code-walk-through/readme-CN.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/code-walk-through/sgl_diffusion.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/code-walk-through/sgl_diffusion.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/code-walk-through/sgl_diffusion.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/diffusion-llm/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/diffusion-llm/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/diffusion-llm/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/dots3-note/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/dots3-note/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/dots3-note/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/dp-attention/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/dp-attention/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/dp-attention/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/how-model-is-loaded/how-model-weight-is-loaded.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/how-model-is-loaded/how-model-weight-is-loaded.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/how-model-is-loaded/how-model-weight-is-loaded.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/interactive-profiling/Interactive_Profiling_cn.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/interactive-profiling/Interactive_Profiling_cn.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/interactive-profiling/Interactive_Profiling_cn.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/kvcache-code-walk-through/mem-fraction-static.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/kvcache-code-walk-through/mem-fraction-static.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/kvcache-code-walk-through/mem-fraction-static.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/kvcache-code-walk-through/readme-CN.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/kvcache-code-walk-through/readme-CN.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/kvcache-code-walk-through/readme-CN.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/latency-accelerate-for-weight-updates/readme-CN.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/latency-accelerate-for-weight-updates/readme-CN.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/latency-accelerate-for-weight-updates/readme-CN.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/nvidia-dynamo/dynamo.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/nvidia-dynamo/dynamo.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/nvidia-dynamo/dynamo.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/quantization/general_background.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/quantization/general_background.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/quantization/general_background.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/quantization/quantization_architecture.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/quantization/quantization_architecture.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/quantization/quantization_architecture.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/quantization/unsloth.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/quantization/unsloth.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/quantization/unsloth.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/scheduler/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/scheduler/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/scheduler/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/sglang-omni/cpu-first-class-citizen-zh.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/sglang-omni/cpu-first-class-citizen-zh.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/sglang-omni/cpu-first-class-citizen-zh.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/sglang-omni/moss-tts-local-batch-encoder-skew-zh.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/sglang-omni/moss-tts-local-batch-encoder-skew-zh.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/sglang-omni/moss-tts-local-batch-encoder-skew-zh.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/sglang-omni/moss-tts-local-vocoder-bottleneck.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/sglang-omni/moss-tts-local-vocoder-bottleneck.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/sglang-omni/moss-tts-local-vocoder-bottleneck.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/sglang-omni/tts-optimization-zh.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/sglang-omni/tts-optimization-zh.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/sglang-omni/tts-optimization-zh.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/sglang-omni/tts-refactor-zh.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/sglang-omni/tts-refactor-zh.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/sglang-omni/tts-refactor-zh.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/sglang-omni/why-sglang-omni.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/sglang-omni/why-sglang-omni.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/sglang-omni/why-sglang-omni.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/sglang-worker/readme-CN.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/sglang-worker/readme-CN.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/sglang-worker/readme-CN.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/speculative-decoding/speculative-decoding.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/speculative-decoding/speculative-decoding.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/speculative-decoding/speculative-decoding.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/sglang/zero-overhead-scheduler/zero-overhead-batch-scheduler.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "sglang/zero-overhead-scheduler/zero-overhead-batch-scheduler.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/sglang/zero-overhead-scheduler/zero-overhead-batch-scheduler.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/torch/cuda-graph/readme-2.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "torch/cuda-graph/readme-2.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/torch/cuda-graph/readme-2.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/torch/cuda-graph/readme-3.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "torch/cuda-graph/readme-3.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/torch/cuda-graph/readme-3.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/torch/cuda-graph/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "torch/cuda-graph/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/torch/cuda-graph/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/torch/mem-snapshot/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "torch/mem-snapshot/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/torch/mem-snapshot/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/torch/nccl/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "torch/nccl/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/torch/nccl/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/torch/torch-distributed/codes",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "torch/torch-distributed/codes",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "directory_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/tree/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/torch/torch-distributed/codes",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/torch/torch-distributed/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "torch/torch-distributed/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/torch/torch-distributed/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    },
+    {
+      "source_target": "cs/inference/Awesome-ML-SYS-Tutorial/transformers/flash_attn/readme.md",
+      "repository": "Awesome-ML-SYS-Tutorial",
+      "path": "transformers/flash_attn/readme.md",
+      "commit": "d1f309b46f81a23e8b6ca0718c05bc897fafacf7",
+      "status": "file_verified",
+      "url": "https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/d1f309b46f81a23e8b6ca0718c05bc897fafacf7/transformers/flash_attn/readme.md",
+      "validation_scope": "Path and object type verified in git tree; original authoring commit is not known"
+    }
+  ]
+}

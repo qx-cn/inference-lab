@@ -1,0 +1,8 @@
+=== [实验 02] nano-vllm 链式哈希前缀复用、slot_mapping 与显存抢占实验 ===
+[核验 1] 链式哈希前序隔离性通过：前序块不同则后续同内容块哈希值不同。
+[核验 2] seq0 预填充完成: block_table=[0, 1, 2], slot_mapping=[0, 1, 2, 3, 4, 5, 6, 7, 8]
+[核验 3] seq1 命中 2 个前缀块: block_table=[0, 1, 3], 共享块 ref_count=[2, 2, 1], 仅新 Token 计算 slot_mapping=[12, 13]
+[核验 4] seq2 分配后空闲块耗尽: free_block_ids=[]
+[核验 5] 显存不足触发抢占 seq2 -> 释放后 free_block_ids=[4] -> seq0 成功追加新块 block_table=[0, 1, 2, 5], 新 Token 写入物理槽位 decode_slot=20
+
+[PASS] 实验 02 全部断言核验通过。

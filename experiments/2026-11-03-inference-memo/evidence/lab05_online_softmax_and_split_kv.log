@@ -1,0 +1,13 @@
+=== [实验 05-A] Online Softmax 分块注意力与 Decode Split-KV 归约精度验证 ===
+  序列长度: 64, Head Dim: 16, 分块大小: 8, Split-KV 切分数: 4
+  Tiled Online Softmax vs 标准 Attention 最大绝对误差: 2.78e-17
+  Split-KV (4 分片 LSE 归约) vs 标准 Attention 最大绝对误差: 4.16e-17
+
+=== [实验 05-B] Fused MoE 块对齐填充 (moe_align_block_size) 与掩码矩阵乘核验 ===
+  展平路由项数 num_valid_tokens=12, padding 假下标编号 padding_token=12, block_size=4
+  填充重排后 sorted_token_ids (len=16): [3, 6, 9, 12, 0, 4, 10, 12, 1, 7, 11, 12, 2, 5, 8, 12]
+  块级专家映射 expert_ids     (len=4): [0, 1, 2, 3]
+  offs_token // top_k 还原原始token行号: [1, 2, 3, -1, 0, 1, 3, -1, 0, 2, 3, -1, 0, 1, 2, -1]
+  Fused MoE 块矩阵乘 vs 朴素逐 token路由最大绝对误差: 0.00e+00
+
+[PASS] 实验 05 全部断言核验通过。

@@ -1,0 +1,25 @@
+=== [实验 09-A] 强化学习过采样 + 部分采样 (Partial Rollout) 与多轮工具 loss_mask 核验 ===
+  同步等待长尾耗时: 180.0 s vs 过采样+动态过滤+达标中断耗时: 42.0 s (提速 4.29x)
+  动态过滤剔除零方差组: [102] | Partial Rollout 回池 (data_buffer) 样本组及已缓存 token 数: [(106, 1621)]
+  多轮工具轨迹 response_length=15, 有效训练 token 数=9, response_loss_mask=[1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+
+=== [实验 09-B] 训推不一致复现、MoE 专家路由翻转与 MIS/Veto 修正核验 ===
+  FP32 非结合律复现: 训练顺序归约=1.00000000 vs 推理 Split-K 归约=1.00000024 (差值=2.38e-07)
+  MoE 门控临界翻转: 训练选专家 0 vs 推理选专家 1 -> Dense K3 KL=4.55e-13, MoE 翻转后 K3 KL=3.50e+06 (放大 7.70e+18 倍)
+  seq_0 (正常对齐): 通过校验 (geo_ratio=0.99996) -> 原始有效权重=0.99996 | 自归一化后最终权重=0.9997
+  seq_1 (轻微偏移): 通过校验 (geo_ratio=1.00056) -> 原始有效权重=1.00056 | 自归一化后最终权重=1.0003
+  seq_2 (MoE路由翻转极小概率): 触发 Veto (min q_infer < 1e-06) -> 序列掩码置 0 | 自归一化后最终权重=0.0000
+  seq_3 (中度分布漂移): 触发 Geometric MIS (geo_ratio=1.11705 越界) -> 序列掩码置 0 | 自归一化后最终权重=0.0000
+
+=== [实验 09-C] 5 合 1 排障靶场与 Perfetto Trace JSON 自动生成及空泡诊断 ===
+  已生成可交互 Trace 文件 1: /Users/admin/wsp/mine/memo/labs/evidence/trace_bad_sync.json
+  已生成可交互 Trace 文件 2: /Users/admin/wsp/mine/memo/labs/evidence/trace_good_overlap.json
+  [诊断 trace_bad_sync.json]     总耗时=27.60 ms | GPU 有效计算=16.00 ms | GPU GPU Bubble 占比=42.0% | 检出 tensor.item() 同步阻塞=4 次
+  [诊断 trace_good_overlap.json] 总耗时=17.20 ms | GPU 有效计算=16.00 ms | GPU GPU Bubble 占比= 7.0% | 检出 tensor.item() 同步阻塞=0 次
+  [靶场归因 #1] 现象: GPU_Stream_Bubble>40% + cudaStreamSynchronize -> 根因: Python 线程误调 .item()/.cpu() 阻塞重叠调度 -> 处方: 改用 FutureMap 负索引占位与异步拷贝
+  [靶场归因 #2] 现象: evictable_size==0 + protected_size 持续单调增长 -> 根因: 请求异常退出漏调 lock_handle(unlock=True) 引发基数树泄漏 -> 处方: 在 abort/finish 路径统一释放树节点引用计数
+  [靶场归因 #3] 现象: ITL_P99>200ms 且伴随单步 32K Prefill 尖刺 -> 根因: 未开启分块预填充导致长请求独占阻塞在线 Decode -> 处方: 启用 Chunked Prefill (chunk_size=2048)
+  [靶场归因 #4] 现象: MoE 训推 K3_KL>1e2 且单步 grad_norm 暴增 -> 根因: Split-K 非结合律引发门控临界处专家路由翻转 -> 处方: 开启 Veto (1e-6) + Geometric MIS + 批次自归一化
+  [靶场归因 #5] 现象: Decode 阶段 SM 活跃度 <15% 但显存带宽未打满 -> 根因: 长序列单查询未启用 Split-KV 导致网格并行度不足 -> 处方: 启用 FlashDecoding Split-KV 并用 LSE 归约
+
+[PASS] 实验 09 全部断言核验通过。
